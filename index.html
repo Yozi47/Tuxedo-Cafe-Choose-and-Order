@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tuxedo Cat Coffee</title>
+	<link rel="stylesheet" href="cafe.css">
+	<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="cafe.js"></script>
+</head>
+<body>
+    <header>
+            <img class="logo" src="images/logo.png" alt="Himalayas">
+    </header>
+    <form action="checkout.html" method="get" id="order_form">
+    <main id="menu">
+        <h2> Menu</h2>
+        <p> Click an item to add it to your order.</p>
+        <ul>
+            <li><img class="real" src="images/espresso.jpg" >
+                <img name="one" class="info" src="images/espresso_info.jpg" alt="Expresso - $1.95" value="1.95"></li>
+                
+            <li><img class="real" src="images/latte.jpg" >    
+                 <img name="two" class="info" src="images/latte_info.jpg" alt="Latte - $2.95" value="2.95"></li> 
+                    
+            <li><img class="real" src="images/cappuccino.jpg" >                           <img name="three" class="info" src="images/cappuccino_info.jpg" alt="Cappuccino -$3.45" value="3.45"></li>
+            
+            <li><img class="real" src="images/coffee.jpg" >     
+                <img name="four" class="info" src="images/coffee_info.jpg" alt="Drip Coffee - $1.75" value="1.75"></li>
+                
+            <li><img class="real" src="images/biscotti.jpg" >                              <img name="five" class="info" src="images/biscotti_info.jpg" alt="Biscotti - $1.95" value="1.95"></li>
+            
+            <li><img class="real" src="images/scone.jpg" >     
+                <img name="six" class="info" src="images/scone_info.jpg" alt="Scone - $2.95"></li>
+        </ul>
+        <h2> Your Order</h2>
+        <select form="order_form" size="6">
+            <option name="one" value="1.95">Expresso - $1.95</option>
+            <option name="two" value="2.95">Latte - $2.95</option>
+            <option name="three" value="3.45">Cappuccino -$3.45</option>
+            <option name="four" value="1.75">Drip Coffee - $1.75</option>
+            <option name="five" value="1.95">Biscotti - $1.95</option>
+            <option name="six" value="2.95">Scone - $2.95</option>
+        </select>
+        <p id="total">Total: $0.00 </p>
+        <input type="submit" value="Place Order">
+        <input type="reset" value="Clear Order">
+    </main>
+    </form>
+</body>
+</html>
